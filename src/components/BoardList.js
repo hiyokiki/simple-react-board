@@ -30,7 +30,7 @@ const BoardList = ({setmodify})=>{
   const [checkList, setChecklist] = useState([]);
 
   const getList = useCallback(()=>{
-    axios.get('http://34.64.93.33:8000')
+    axios.get('http://34.64.93.33:8000/list')
     .then( (res)=> {
       // 성공 핸들링
       console.log(res.data);
