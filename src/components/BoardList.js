@@ -68,7 +68,7 @@ const BoardList = ({setmodify})=>{
     }
     let boardIDList = checkList.join(); //[1,2,3]->1,2,3
 
-    axios.post('http://http://34.64.93.33:8000/delete',{boardIDList})
+    axios.post('http://34.64.93.33:8000/delete',{boardIDList})
     .then( (res)=> {
       // 성공 핸들링
       alert('삭제 완료');
